@@ -1,14 +1,14 @@
 #include<stdio.h>
 int main()
 {
-int n,pal,i,a,temp=0;
+int n,p,i,a,temp=0;
 scanf("%d",&n);
-pal=n;
-for(i=0;pal!=0;i++)
+p=n;
+for(i=0;p!=0;i++)
 {
-    a=pal%10;
+    a=p%10;
     temp=temp*10 + a;
-    pal=pal/10;
+    p=p/10;
 }
 if(n==temp)
     printf("palindrome");
